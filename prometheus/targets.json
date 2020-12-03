@@ -1,0 +1,27 @@
+[
+  {
+    "labels": {
+      "job": "node"
+    },
+    "targets": [
+      "localhost:9090"
+    ]
+  },
+  {
+    "targets": [
+      "139.59.94.191:8009"
+    ],
+    "labels": {
+      "job": "node"
+    }
+  },
+  {
+    "targets": [
+      "139.59.94.191:8001"
+    ],
+    "labels": {
+      "job": "node2"
+    }
+  }
+
+]
