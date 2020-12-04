@@ -5,7 +5,7 @@
 
 docker run --name prometheus -d -p 9090:9090 -v prometheus:/etc/prometheus prom/prometheus:latest
 
-#docker command to build to run the web server
+#Build and run the web server
 
 git clone https://github.com/Anandanr/prometheus.git
 docker build -t hid .
