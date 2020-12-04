@@ -104,10 +104,17 @@ The Prometheus slaves should have the following configuration:
 <code>
 
 global:
+
   external_labels:
+  
     slave: 1
+    
   relabel_configs:
+  
   - source_labels: [_prometheus_slave]
+  
     action: keep
+    
     regex: slave1
+    
  </code>
