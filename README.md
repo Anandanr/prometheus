@@ -33,9 +33,11 @@ requirements
 The first step is taking snapshots of Prometheus data, which can be done using Prometheus API. In order to use it, Prometheus API must first be enabled, using the CLI command:
 
 ./prometheus --storage.tsdb.path=data/ --web.enable-admin-api
+
 The next step is to take the snapshot:
 
 curl -XPOST http://{prometheus}:9090/api/v1/admin/tsdb/snapshot
+
 Snapshots are stored in the data/snapshots directory.
 
 Automating this command, running it as part of a daily or monthly procedure, and moving the snapshots to an external storage solution allows DevOps to retain historical data without having to continuously monitor the storage usage of Prometheus. 
