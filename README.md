@@ -15,7 +15,7 @@ docker build -t hid .
 
 docker run --name greetpeople -d -p 8009:8009 hid:latest
 
-Update the IP address of the server in the target.json file at https://github.com/Anandanr/prometheus/blob/master/prometheus/targets.json
+Update the IP address of the server in the target.json file at https://github.com/Anandanr/prometheus/blob/master/prometheus/targets.json on your local machine.
 
 
 Monitoring Tool
