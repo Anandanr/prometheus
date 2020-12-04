@@ -12,6 +12,7 @@ These devices can be of any type, they are IP connected and expose the metrics o
 common REST endpoint("/metric").
 For this exercise, we want to monitor few metrices of IP Switches. And following are the
 requirements
+
 #1. Scrape the metrics for every configured time interval(default shall be 5 seconds)
 
  scrape_interval:     5s // in the prometheus.yml file
