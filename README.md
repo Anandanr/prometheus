@@ -74,15 +74,25 @@ see https://github.com/Anandanr/prometheus/blob/master/prometheus/targets.json
 Setting this architecture up is quite simple. A master server is deployed with “targets” that contain a list of slave Prometheus server URLs, like this:
 <code>
 scrape_configs:
+	
       - job_name: federated_prometheus
+      
         honor_labels: true
+	
         metrics_path: /federate
+	
         params:
+	
           match[]:
+	  
           - '{job="the-prom-job"}'
+	  
         static_configs:
+	
           - targets:
+	  
             - prometheus-slave1:9090
+	    
             - prometheus-slave2:9090
 </code>
 												
