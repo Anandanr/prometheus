@@ -70,6 +70,7 @@ see https://github.com/Anandanr/prometheus/blob/master/prometheus/targets.json
 
 
 <B>#6. Should scale for hundreds of metrics and thousands of devices</B>
+
 Setting this architecture up is quite simple. A master server is deployed with “targets” that contain a list of slave Prometheus server URLs, like this:
 
 scrape_configs:
