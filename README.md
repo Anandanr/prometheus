@@ -51,6 +51,8 @@ scrape_configs:
      file_sd_configs:
        - files:
           - 'targets.json' 
+          
+see https://github.com/Anandanr/prometheus/blob/master/prometheus/targets.json
 
 
 #6. Should scale for hundreds of metrics and thousands of devices
