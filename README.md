@@ -72,7 +72,7 @@ see https://github.com/Anandanr/prometheus/blob/master/prometheus/targets.json
 <B>#6. Should scale for hundreds of metrics and thousands of devices</B>
 
 Setting this architecture up is quite simple. A master server is deployed with “targets” that contain a list of slave Prometheus server URLs, like this:
-
+<code>
 scrape_configs:
       - job_name: federated_prometheus
         honor_labels: true
@@ -84,6 +84,7 @@ scrape_configs:
           - targets:
             - prometheus-slave1:9090
             - prometheus-slave2:9090
+</code>
 												
 The match[] param in the configuration instructs Prometheus to accumulate and store all the slave metrics for a specific job. You can also set it as a regex: {__name__=~”^job:.*”}. This will collect metrics from several different jobs that match the expression definition. 
 
