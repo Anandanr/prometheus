@@ -8,7 +8,9 @@ docker run --name prometheus -d -p 9090:9090 -v prometheus:/etc/prometheus prom/
 #Build and run the web server
 
 git clone https://github.com/Anandanr/prometheus.git
+
 docker build -t hid .
+
 docker run --name greetpeople -d -p 8009:8009 hid:latest
 
 Update the IP address of the server in the target.json file at https://github.com/Anandanr/prometheus/blob/master/prometheus/targets.json
