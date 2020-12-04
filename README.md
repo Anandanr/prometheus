@@ -51,7 +51,7 @@ The second step is to configure the required retention time period of time serie
 This can be achived by the same like as "2. Store the data in a file system" as follows:
 
 $ curl -X POST \
-    -g 'http://localhost:9090/api/v1/admin/tsdb/delete_series?match[]={foo="bar"}
+    -g 'http://{prometheus}9090/api/v1/admin/tsdb/delete_series?match[]={foo="bar"}
 
 <B>#4. Expose an endpoint to query the historical data of the devices</B>
 
