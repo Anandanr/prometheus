@@ -83,6 +83,7 @@ scrape_configs:
           - targets:
             - prometheus-slave1:9090
             - prometheus-slave2:9090
+												
 The match[] param in the configuration instructs Prometheus to accumulate and store all the slave metrics for a specific job. You can also set it as a regex: {__name__=~”^job:.*”}. This will collect metrics from several different jobs that match the expression definition. 
 
 The Prometheus slaves should have the following configuration: 
